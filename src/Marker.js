@@ -62,16 +62,16 @@ class Marker extends Component {
         //Request related TIPs and Photos by Foursquare API
         let venueId = null;
         let tipsList = null;
-        fetch(`https://api.foursquare.com/v2/venues/search?ll=35.686929,-105.938104&v=20180518&query=${title}&limit=1&client_id=GOVPZHTXRPFBO1FWASW113QNN0MKOTN1WBPNBAPIAY1SRPBW&client_secret=TV4A1OUTZD0DJ1NCLV1UAPUMXV0WJCQPO54BG5SP1QQUZUIQ`)
+        fetch(`https://api.foursquare.com/v2/venues/search?ll=35.686929,-105.938104&v=20181105&query=${title}&limit=1&client_id=GOVPZHTXRPFBO1FWASW113QNN0MKOTN1WBPNBAPIAY1SRPBW&client_secret=TV4A1OUTZD0DJ1NCLV1UAPUMXV0WJCQPO54BG5SP1QQUZUIQ`)
             .then(response => response.json())
             .then(data => {
               venueId = data.response.venues[0].id;
-              return fetch(`https://api.foursquare.com/v2/venues/${venueId}/tips?v=20180518&limit=4&client_id=GOVPZHTXRPFBO1FWASW113QNN0MKOTN1WBPNBAPIAY1SRPBW&client_secret=TV4A1OUTZD0DJ1NCLV1UAPUMXV0WJCQPO54BG5SP1QQUZUIQ`);
+              return fetch(`https://api.foursquare.com/v2/venues/${venueId}/tips?v=20181105&limit=4&client_id=GOVPZHTXRPFBO1FWASW113QNN0MKOTN1WBPNBAPIAY1SRPBW&client_secret=TV4A1OUTZD0DJ1NCLV1UAPUMXV0WJCQPO54BG5SP1QQUZUIQ`);
             })
             .then(response => response.json())
             .then(dataTips => {
               tipsList = dataTips;
-              return fetch(`https://api.foursquare.com/v2/venues/${venueId}/photos?v=20180518&limit=2&client_id=GOVPZHTXRPFBO1FWASW113QNN0MKOTN1WBPNBAPIAY1SRPBW&client_secret=TV4A1OUTZD0DJ1NCLV1UAPUMXV0WJCQPO54BG5SP1QQUZUIQ`);
+              return fetch(`https://api.foursquare.com/v2/venues/${venueId}/photos?v=20181105&limit=2&client_id=GOVPZHTXRPFBO1FWASW113QNN0MKOTN1WBPNBAPIAY1SRPBW&client_secret=TV4A1OUTZD0DJ1NCLV1UAPUMXV0WJCQPO54BG5SP1QQUZUIQ`);
             })
             .then(response => response.json())
             .then(dataPhotos => addVenuesInfos(tipsList, dataPhotos))
