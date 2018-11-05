@@ -2,7 +2,7 @@ Neighborhood Map in React
 
 1. Overview
 
-This is my last project in Udacity/FEND, this project is built using React framework, that displays a Map of my favorite locations in Santa Fe. Users can filter the locations by their name. When user choose a location, the infomation about it's location will be shown on map using Info Window of Google Map.
+This is my last project in Udacity/FEND program.This project is built using React framework, that displays a Map of my favorite locations in Santa Fe. Users can filter the locations by their name. When user choose a location, the infomation about it's location will be shown on map using Info Window of Google Map.
 
 2. Installation
 
