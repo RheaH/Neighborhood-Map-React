@@ -2,7 +2,7 @@
   "name": "neighborhood",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://elfiservice.github.io/neighborhood-map-react/",
+  "homepage": "https://rheah.github.io/neighborhood-map-react/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "google-maps-react": "^1.1.0",
