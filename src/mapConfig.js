@@ -22,12 +22,6 @@ const mapConfig = {
               { lightness: -40 }
             ]
           },{
-            featureType: 'transit.station',
-            stylers: [
-              { weight: 9 },
-              { hue: '#e85113' }
-            ]
-          },{
             featureType: 'road.highway',
             elementType: 'labels.icon',
             stylers: [
@@ -38,12 +32,6 @@ const mapConfig = {
             elementType: 'labels.text.stroke',
             stylers: [
               { lightness: 100 }
-            ]
-          },{
-            featureType: 'water',
-            elementType: 'labels.text.fill',
-            stylers: [
-              { lightness: -100 }
             ]
           },{
             featureType: 'poi',
