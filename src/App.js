@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
     mapContainerElemt.appendChild(erroElement)
   }
 })
+function gm_authFailure() { 
+        alert("Ops! We cant access Google Maps API for now! "); // authentication failed message
+    };
 
 class App extends Component {
   constructor(props) {
